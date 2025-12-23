@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+.rgb-text {
+  color: white; /* Color inicial para que se vea antes de la animación */
+  animation: rgb-change 5s infinite alternate; /* Nombre de la animación, duración, repetición, dirección */
+}
+
+@keyframes rgb-change {
+  0% {
+    color: red;
+  }
+  25% {
+    color: lime; /* Verde */
+  }
+  50% {
+    color: blue;
+  }
+  75% {
+    color: yellow;
+  }
+  100% {
+    color: red; /* Volver al inicio para un ciclo */
+  }
+}
